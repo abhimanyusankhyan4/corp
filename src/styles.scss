@@ -1,0 +1,342 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f3ece1;
+}
+
+img {
+    max-width: 100%;
+}
+
+.app-wrapper {
+    max-width: 780px;
+    margin: auto;
+    padding: 40px 40px 20px 40px;
+}
+
+.banner-section .logo-badge-wrap .logo {
+    margin: 0 0 30px;
+    display: inline-block;
+}
+
+.banner-section .logo-badge-wrap .logo img {
+    width: 140px;
+}
+
+.banner-section .banner-text h1 {
+    display: inline;
+    background: #288c3f;
+    line-height: 1.4;
+    padding: 0px 10px;
+    color: #fff;
+    font-weight: 400;
+}
+
+hr {
+    border: 1px solid #288c3f;
+    opacity: 1;
+    margin: 30px 0;
+}
+
+
+.app-wrapper .story h4 {
+    margin: 0;
+    color: #288c3f;
+    font-size: 30px;
+}
+
+.map-wrap iframe {
+    border: 1px solid #288c3f;
+    width: 100%;
+    height: 213px;
+    vertical-align: middle;
+}
+
+.app-wrapper .story-wrap {
+    background: #288d3f;
+    padding: 20px;
+}
+
+.app-wrapper .story-wrap .story-inner {
+    text-align: center;
+}
+
+.app-wrapper .story-wrap .story-inner .title-wrap {
+    background-color: transparent;
+    border: 1px solid #f4efe5;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    padding: 7px 0px;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+.app-wrapper .story-wrap div[class*="col"]:not(:last-of-type) .story-inner .title-wrap::after {
+    content: "";
+    width: 16px;
+    height: 15px;
+    background-image: url(./assets/images/right-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.app-wrapper .story-wrap .story-inner .img-wrap {
+    margin-bottom: 10px;
+}
+
+.app-wrapper .story-wrap .story-inner .img-wrap img {
+    max-height: 28px;
+}
+
+.app-wrapper .story-wrap .date {
+    background-color: #f4efe5;
+    padding: 6px 6px;
+    display: inline-block;
+    font-weight: 500;
+    margin: 0 0 7px 0;
+    font-size: 14px;
+    width: 87px;
+}
+
+.app-wrapper .story-wrap [left-title] {
+    position: relative;
+}
+
+.app-wrapper .story-wrap [left-title]::before {
+    content: attr(left-title);
+    position: absolute;
+    left: -39px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.app-wrapper .story-wrap .date-place {
+    text-align: right;
+}
+
+.app-wrapper .story-wrap .date-place .place {
+    background-color: #f4efe5;
+    margin-left: auto;
+    padding: 6px 6px;
+    display: inline-block;
+    width: 87px;
+    text-align: center;
+}
+
+.timeline .timeline-list:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.timeline .timeline-list .icon-wrap {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #288d3f;
+    margin: auto;
+    position: relative;
+}
+
+.timeline .timeline-list:not(:last-of-type) .icon-wrap::after {
+    position: absolute;
+    width: 35px;
+    height: 60px;
+    content: '';
+    background-image: url(./assets/images/down-arrow.png);
+    background-position: center;
+    background-size: contain;
+    bottom: -85%;
+    background-repeat: no-repeat;
+}
+
+.timeline .timeline-list .img-wrap {
+    padding-bottom: 64%;
+    position: relative;
+    border: 1px solid #288d3f;
+    background: #288d3f;
+}
+
+
+.timeline .timeline-list .img-wrap img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.timeline .timeline-list .text-wrap h4 {
+    color: #288d3f;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+
+.timeline .timeline-list .text-wrap .when-where .data-wrapper:not(:last-of-type) {
+    margin-bottom: 6px;
+}
+
+.timeline .timeline-list .text-wrap .when-where .data-wrapper span {
+    color: #2c2e35;
+}
+
+.timeline .timeline-list .text-wrap .when-where .data-wrapper .title {
+    width: 65px;
+    display: inline-block;
+}
+
+.timeline .timeline-list .text-wrap .when-where .data-wrapper .data {
+    width: 100px;
+    border: 0.75px solid #288d3f;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.timeline .timeline-list .text-wrap .when-where .data-wrapper:first-of-type .data {
+    font-weight: 500;
+}
+
+.footer-text-wrap {
+    background: #288d3f;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-text-wrap .top-text {
+    color: #fff;
+}
+
+.footer-text-wrap ul.social {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    list-style-type: none;
+}
+
+.footer-text-wrap ul.social li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px 10px 40px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 30px;
+    display: inline-block;
+}
+
+.footer-text-wrap ul.social li+li {
+    margin-left: 50px;
+}
+
+.footer-text-wrap ul.social li a.insta {
+    background-image: url(./assets/images/insta.png);
+}
+
+.footer-text-wrap ul.social li a.web {
+    background-image: url(./assets/images/web.png);
+}
+
+.footer-copyright p {
+    margin: 0;
+    color: #2c2e35;
+    font-size: 14px;
+}
+
+.footer-copyright img {
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+
+@media (max-width: 767.98px) {
+    .banner-section .badge-wrap img {
+        max-height: 90px;
+    }
+
+    .banner-section .logo-badge-wrap .logo img {
+        width: 90px;
+    }
+    .timeline .timeline-list:not(:last-of-type) .icon-wrap::after, 
+    .app-wrapper .story-wrap div[class*=col]:not(:last-of-type) .story-inner .title-wrap::after{
+        display: none;
+    }
+    .app-wrapper .story-wrap div[class*=col]:not(:last-of-type) .story-inner {
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .app-wrapper .story-wrap div[class*=col]:not(:last-of-type) .story-inner::after{
+        position: absolute;
+        width: 14px;
+        height: 19px;
+        content: '';
+        background-image: url(./assets/images/down-arrow-white.png);
+        background-position: center;
+        background-size: contain;
+        left: 50%;
+        background-repeat: no-repeat;
+        transform: translateX(-50%);
+        bottom: -29px;
+
+    }
+    .app-wrapper .story-wrap .date, .app-wrapper .story-wrap .date-place .place{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .app-wrapper .story-wrap [left-title]::before{
+        display: none;
+    }
+
+    .timeline .timeline-list .icon-wrap, .timeline .timeline-list .img-wrap {
+        margin-bottom: 10px;
+    }
+    .timeline .timeline-list .text-wrap {
+        text-align: center;
+    }
+    .timeline .timeline-list:not(:last-of-type) {
+        margin-bottom: 80px;
+        position: relative;
+    }
+
+    .timeline .timeline-list:not(:last-of-type)::after{
+        position: absolute;
+        width: 25px;
+        height: 40px;
+        content: "";
+        background-image: url(./assets/images/down-arrow.png);
+        background-position: center;
+        background-size: contain;
+        bottom: -60px;
+        background-repeat: no-repeat;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .banner-section .banner-wrapper img {
+        max-height: 190px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer-text-wrap ul.social li+li {
+        margin: 0;
+    }
+
+    .footer-text-wrap ul.social li a {
+        padding: 5px 5px 5px 40px;
+    }
+
+    .app-wrapper {
+        padding: 20px 20px 20px 20px;
+    }
+    .app-wrapper .story h4 {
+        margin: 0;
+        color: #288c3f;
+        font-size: 25px;
+    }
+}

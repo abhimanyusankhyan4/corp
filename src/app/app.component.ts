@@ -14,6 +14,8 @@ export class AppComponent {
     this.cropData.crops().subscribe((data)=>{
       console.log('data', data);
       this.crops = data;
-    })
+     })
+ 
+
   }
 }

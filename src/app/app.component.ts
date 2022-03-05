@@ -32,8 +32,8 @@ export class AppComponent implements OnInit{
         layers: [
             tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
         ],
-        zoom: 5,
-        center: latLng(this.crops.seedSite.lon,this.crops.seedSite.lat)
+        zoom: 4,
+        center: latLng(this.crops.packageSite.lon,this.crops.packageSite.lat)
     };
       this.latlong1 = [this.crops.seedSite.lon,this.crops.seedSite.lat]
      this.latlong2 = [this.crops.harvestSite.lon,this.crops.harvestSite.lat]

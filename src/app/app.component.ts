@@ -2,10 +2,10 @@ import { Component ,OnInit} from '@angular/core';
 
 import { CropDataService } from './crop-data.service'
 import * as L from "leaflet";
-// import { LayerGroup, tileLayer ,latLng} from "leaflet";
-
+// import { LayerGroup, tileLayer ,latLng} from "leaflet"; 
 import {featureGroup, latLng, tileLayer, polygon, marker, Icon, LatLngBounds} from 'leaflet';
- 
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -23,9 +23,11 @@ export class AppComponent implements OnInit{
   latlong2: any =[]
   latlong3: any =[]
   latlong4: any =[]
-
-  constructor(private cropData:CropDataService){
-    this.cropData.crops().subscribe((data)=>{
+  urlPara = '';
+  constructor(private cropData:CropDataService,private route: ActivatedRoute){
+    this.route.queryParams.subscribe(params => {
+      let id = params['lot']; 
+    this.cropData.crops(id).subscribe((data)=>{
       console.log('data', data);
       this.crops = data;
       this.options = {
@@ -44,11 +46,11 @@ export class AppComponent implements OnInit{
 
      }) 
  
-
+    })
   }
 
   ngOnInit() {
- 
+
 }
 
 onMapReady(map:any) {

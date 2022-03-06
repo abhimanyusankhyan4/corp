@@ -5,10 +5,10 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class CropDataService {
-  url = "https://qrvisor-env.eba-x8qnmkmd.eu-central-1.elasticbeanstalk.com/qrvisor/tomato/20051"
+  url = "https://qrvisor-env.eba-x8qnmkmd.eu-central-1.elasticbeanstalk.com/qrvisor/tomato"
   constructor(private http:HttpClient) { }
-  crops(){
-    return this.http.get(this.url);
+  crops(id:any){   
+    return this.http.get(this.url+'/'+id);
   }
   
 }

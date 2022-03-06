@@ -37,10 +37,10 @@ export class AppComponent implements OnInit{
         center: latLng(this.crops.packageSite.lon,this.crops.packageSite.lat),
         zoom: 13
     };
-      this.latlong1 = [this.crops.seedSite.lon,this.crops.seedSite.lat]
-     this.latlong2 = [this.crops.harvestSite.lon,this.crops.harvestSite.lat]
-     this.latlong3 = [this.crops.packageSite.lon,this.crops.packageSite.lat]
-     this.latlong4 = [this.crops.merchantSite.lon,this.crops.merchantSite.lat]
+      this.latlong1 = [this.crops.seedSite.lat,this.crops.seedSite.lon]
+     this.latlong2 = [this.crops.harvestSite.lat,this.crops.harvestSite.lon]
+     this.latlong3 = [this.crops.packageSite.lat,this.crops.packageSite.lon]
+     this.latlong4 = [this.crops.merchantSite.lat,this.crops.merchantSite.lon]
 
     this.checkMap =1;
 

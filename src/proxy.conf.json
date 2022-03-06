@@ -1,0 +1,6 @@
+{
+    "/qrvisor/*": {
+      "target": "https://qrvisor-env.eba-x8qnmkmd.eu-central-1.elasticbeanstalk.com",
+      "secure": false
+    }
+  }

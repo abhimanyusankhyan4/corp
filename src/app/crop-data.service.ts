@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from './../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CropDataService {
-  url = "https://qrvisor-env.eba-x8qnmkmd.eu-central-1.elasticbeanstalk.com/qrvisor/tomato"
-  constructor(private http:HttpClient) { }
-  crops(id:any){   
-    return this.http.get(this.url+'/'+id);
+  apiURL = environment.apiURL;
+   constructor(private http:HttpClient) { }
+  crops(id:any){  
+  
+    return this.http.get(this.apiURL+'/tomato/'+id);
   }
   
 }

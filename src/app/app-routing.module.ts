@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
+import { TomatoComponent } from './tomato/tomato.component';
 
 const routes: Routes =  [
-  { path: 'tomoto', component: AppComponent }
+  { path: '', component: TomatoComponent } ,
+  { path: 'tomato', component: TomatoComponent }
 ];
 
 @NgModule({

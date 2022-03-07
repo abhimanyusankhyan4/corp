@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { TomatoComponent } from './tomato/tomato.component';
 
  
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TomatoComponent
   ],
   imports: [
     BrowserModule,

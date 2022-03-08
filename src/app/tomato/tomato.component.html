@@ -121,146 +121,151 @@
       </div>
     </div>
     <div class="timeline mb-3 mb-md-4">
-      <div class="timeline-list align-items-center row">
-        <div class="col-md-4">
-          <div class="icon-wrap d-flex align-items-center justify-content-center">
-            <img src="../assets/images/icon1.png" alt="">
+      <div class="timeline-list">
+        <div class="align-items-center row">
+          <div class="col-md-4">
+            <div class="icon-wrap d-flex align-items-center justify-content-center">
+              <img src="../assets/images/icon1.png" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="img-wrap">
-            <img src="../assets/images/seeding.jpg" alt="">
+          <div class="col-md-4">
+            <div class="img-wrap">
+              <img src="../assets/images/seeding.jpg" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="text-wrap">
-            <h4>ΦΥΤΕΥΤΗΚΕ</h4>
-            <div class="when-where">
-              <div class="data-wrapper">
-                <span class="title">Πότε :</span>
-                <span class="data">{{ crops ? (crops.plantedAt | date:'d/MM/YYY') :'' }}</span>
-              </div>
-              <div class="data-wrapper">
-                <span class="title">Πού :</span>
-                <span class="data">{{ crops ? crops.seedSite.name:''}}</span>
+          <div class="col-md-4">
+            <div class="text-wrap">
+              <h4>ΦΥΤΕΥΤΗΚΕ</h4>
+              <div class="when-where">
+                <div class="data-wrapper">
+                  <span class="title">Πότε :</span>
+                  <span class="data">{{ crops ? (crops.plantedAt | date:'d/MM/YYY') :'' }}</span>
+                </div>
+                <div class="data-wrapper">
+                  <span class="title">Πού :</span>
+                  <span class="data">{{ crops ? crops.seedSite.name:''}}</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="timeline-list align-items-center row">
-        <div class="col-md-4">
-          <div class="icon-wrap d-flex align-items-center justify-content-center">
-            <img src="../assets/images/icon2.png" alt="">
+      <div class="timeline-list">
+        <div class="align-items-center row">
+          <div class="col-md-4">
+            <div class="icon-wrap d-flex align-items-center justify-content-center">
+              <img src="../assets/images/icon2.png" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="img-wrap">
-            <img src="../assets/images/step-2.jpg" alt="">
+          <div class="col-md-4">
+            <div class="img-wrap">
+              <img src="../assets/images/step-2.jpg" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="text-wrap">
-            <h4>ΣΥΛΛΕΧΘΗΚΕ</h4>
-            <div class="when-where">
-              <div class="data-wrapper">
-                <span class="title">Πότε :</span>
-                <span class="data">{{ crops ? (crops.harvestedAt | date:'d/MM/YYY' ) :''}}</span>
-              </div>
-              <div class="data-wrapper">
-                <span class="title">Πού :</span>
-                <span class="data">{{ crops ? crops.harvestSite.name:''}}</span>
+          <div class="col-md-4">
+            <div class="text-wrap">
+              <h4>ΣΥΛΛΕΧΘΗΚΕ</h4>
+              <div class="when-where">
+                <div class="data-wrapper">
+                  <span class="title">Πότε :</span>
+                  <span class="data">{{ crops ? (crops.harvestedAt | date:'d/MM/YYY' ) :''}}</span>
+                </div>
+                <div class="data-wrapper">
+                  <span class="title">Πού :</span>
+                  <span class="data">{{ crops ? crops.harvestSite.name:''}}</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-  
-      <div class="timeline-list align-items-center row">
-        <div class="col-md-4">
-          <div class="icon-wrap d-flex align-items-center justify-content-center">
-            <img src="../assets/images/icon3.png" alt="">
+      <div class="timeline-list">
+        <div class="align-items-center row">
+          <div class="col-md-4">
+            <div class="icon-wrap d-flex align-items-center justify-content-center">
+              <img src="../assets/images/icon3.png" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="img-wrap">
-            <img src="../assets/images/step-3.jpg" alt="">
+          <div class="col-md-4">
+            <div class="img-wrap">
+              <img src="../assets/images/step-3.jpg" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="text-wrap">
-            <h4>ΣΥΣΚΕΥΑΣΤΗΚΕ</h4>
-            <div class="when-where">
-              <div class="data-wrapper">
-                <span class="title">Πότε :</span>
-                <span class="data">{{ crops ? ( crops.packagedAt | date:'d/MM/YYY'):'' }}</span>
-              </div>
-              <div class="data-wrapper">
-                <span class="title">Πού :</span>
-                <span class="data">{{ crops ? crops.packageSite.name:''}}</span>
+          <div class="col-md-4">
+            <div class="text-wrap">
+              <h4>ΣΥΣΚΕΥΑΣΤΗΚΕ</h4>
+              <div class="when-where">
+                <div class="data-wrapper">
+                  <span class="title">Πότε :</span>
+                  <span class="data">{{ crops ? ( crops.packagedAt | date:'d/MM/YYY'):'' }}</span>
+                </div>
+                <div class="data-wrapper">
+                  <span class="title">Πού :</span>
+                  <span class="data">{{ crops ? crops.packageSite.name:''}}</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="timeline-list align-items-center row">
-        <div class="col-md-4">
-          <div class="icon-wrap d-flex align-items-center justify-content-center">
-            <img src="../assets/images/icon4.png" alt="">
+      <div class="timeline-list">
+        <div class="align-items-center row">
+          <div class="col-md-4">
+            <div class="icon-wrap d-flex align-items-center justify-content-center">
+              <img src="../assets/images/icon4.png" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="img-wrap">
-            <img src="../assets/images/step-4.jpg" alt="">
+          <div class="col-md-4">
+            <div class="img-wrap">
+              <img src="../assets/images/step-4.jpg" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="text-wrap">
-            <h4>ΣΤΑΛΘΗΚΕ ΣΤΙς ΑΠΟΘΗΚΕς ΤΟΥ [ΑΒ]</h4>
-            <div class="when-where">
-              <div class="data-wrapper">
-                <span class="title">Πότε :</span>
-                <span class="data">{{ crops ? (crops.packagedAt | date:'d/MM/YYY' ):''}}</span>
-              </div>
-              <div class="data-wrapper">
-                <span class="title">Πού :</span>
-                <span class="data">{{ crops ? crops.packageSite.name:''}}</span>
+          <div class="col-md-4">
+            <div class="text-wrap">
+              <h4>ΣΤΑΛΘΗΚΕ ΣΤΙς ΑΠΟΘΗΚΕς ΤΟΥ [ΑΒ]</h4>
+              <div class="when-where">
+                <div class="data-wrapper">
+                  <span class="title">Πότε :</span>
+                  <span class="data">{{ crops ? (crops.packagedAt | date:'d/MM/YYY' ):''}}</span>
+                </div>
+                <div class="data-wrapper">
+                  <span class="title">Πού :</span>
+                  <span class="data">{{ crops ? crops.packageSite.name:''}}</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-  
-      <div class="timeline-list align-items-center row">
-        <div class="col-md-4">
-          <div class="icon-wrap d-flex align-items-center justify-content-center">
-            <img src="../assets/images/icon5.png" alt="">
+      <div class="timeline-list">
+        <div class="align-items-center row">
+          <div class="col-md-4">
+            <div class="icon-wrap d-flex align-items-center justify-content-center">
+              <img src="../assets/images/icon5.png" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="img-wrap">
-            <img src="../assets/images/step-5.jpg" alt="">
+          <div class="col-md-4">
+            <div class="img-wrap">
+              <img src="../assets/images/step-5.jpg" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="text-wrap">
-            <h4>ΕΦΤΑΣΕ ΣΤΑ ΧΕΡΙΑ ΣΟΥ</h4>
-            <div class="when-where">
-              <div class="data-wrapper">
-                <span class="title">Πότε :</span>
-                <span class="data">{{ crops ? (crops.shippedAt | date:'d/MM/YYY'):'' }}</span>
-              </div>
-              <div class="data-wrapper">
-                <span class="title">Πού :</span>
-                <span class="data">{{ crops ? crops.merchantSite.name:''}}</span>
+          <div class="col-md-4">
+            <div class="text-wrap">
+              <h4>ΕΦΤΑΣΕ ΣΤΑ ΧΕΡΙΑ ΣΟΥ</h4>
+              <div class="when-where">
+                <div class="data-wrapper">
+                  <span class="title">Πότε :</span>
+                  <span class="data">{{ crops ? (crops.shippedAt | date:'d/MM/YYY'):'' }}</span>
+                </div>
+                <div class="data-wrapper">
+                  <span class="title">Πού :</span>
+                  <span class="data">{{ crops ? crops.merchantSite.name:''}}</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-  
-  
-  
     </div>
     <div class="terms-top mb-3 mb-md-4">
       <div class="text-wrap">

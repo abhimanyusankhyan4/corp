@@ -5,6 +5,9 @@ body {
 	background: #f3ece1;
     font-size: 15px;
 }
+div:empty, span:empty {
+    display: none !important;
+}
 img {
 	max-width: 100%;
 }
@@ -22,6 +25,7 @@ img {
 	.story-wrap {
 		background: #288d3f;
 		padding: 20px;
+		border-radius: 5px;
 		.story-inner {
 			text-align: center;
 			.title-wrap {
@@ -123,13 +127,19 @@ hr {
 }
 .map-wrap {
 	.map-frame {
-		border: 1px solid #288c3f;
 		width: 100%;
 		height: 300px;
 		vertical-align: middle;
+		box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
 	}
 }
 .timeline {
+	
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	
 	.timeline-list {
 		&:not(:last-of-type) {
 			margin-bottom: 20px;
@@ -175,6 +185,8 @@ hr {
 			}
 			.when-where {
 				.data-wrapper {
+					display: flex;
+					align-items: center;
 					&:not(:last-of-type) {
 						margin-bottom: 6px;
 					}
@@ -183,12 +195,12 @@ hr {
 					}
 					.title {
 						width: 65px;
-						display: inline-block;
+						display: block;
 					}
 					.data {
 						width: 100px;
 						border: 0.75px solid #288d3f;
-						display: inline-block;
+						display: block;
 						text-align: center;
 					}
 					&:first-of-type {
@@ -205,6 +217,7 @@ hr {
 	background: #288d3f;
 	padding: 20px;
 	text-align: center;
+	border-radius: 5px;
 	.top-text {
 		color: #fff;
 	}
@@ -246,7 +259,30 @@ hr {
 		margin-left: 5px;
 	}
 }
+.terms-top {
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    p{
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
 @media (max-width: 767.98px) {
+	.timeline{
+		.timeline-list{
+			.text-wrap{
+				.when-where{
+					.data-wrapper {
+						justify-content: center;
+					}
+				} 
+			} 
+	
+		} 
+	} 
 	.banner-section {
 		.badge-wrap {
 			img {

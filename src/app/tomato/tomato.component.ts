@@ -33,7 +33,12 @@ export class TomatoComponent implements OnInit {
       this.crops = data;
       this.options = {
         layers: [
-            tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { })
+          tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicG9vamFrdW1hcmkyMyIsImEiOiJjbDBsNmdqbmEwcnR0M2NwdzNoc2U5OWk0In0.jbfkAiRBwdtdyLP3hkHKVQ', {
+            maxZoom: 15,
+            id: 'mapbox/light-v9',
+            tileSize: 512,
+            zoomOffset: -1
+          })
         ],
         center: latLng(this.crops.packageSite.lon,this.crops.packageSite.lat),
         zoom: 13
